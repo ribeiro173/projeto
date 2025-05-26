@@ -20,13 +20,17 @@
     header {
       background: #208f58;
       color: white;
-      padding: 20px;
+      padding: 10px 20px;
     }
 
     header .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .logo {
+      height: 50px;
     }
 
     nav a {
@@ -80,6 +84,7 @@
       color: white;
       padding: 30px 20px;
       text-align: center;
+      font-size: 14px;
     }
 
     footer a {
@@ -97,9 +102,10 @@
 
   <header>
     <div class="container">
-       <img src="img.jpg.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+      <!-- Substitua pelo caminho correto da logo -->
+      <img src="logo.png" alt="Logo da empresa" class="logo">
       <nav>
-        <a href="quemSomos.html">Quem Somos</a>
+        <a href="#quemsomos">Quem Somos</a>
         <a href="#noticias">Notícias</a>
         <a href="#valores">Valores</a>
         <a href="#contato">Contato</a>
@@ -135,21 +141,22 @@
       <a href="https://www.facebook.com/login" target="_blank">Facebook</a> |
       <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a> |
       <a href="https://www.linkedin.com/login" target="_blank">LinkedIn</a>
-    <p>&copy; 2025 SeuNomeOuNomeDoSite. Todos os direitos reservados.</p>
     </p>
+    <p>&copy; 2025 SomosCoop Inspirado. Todos os direitos reservados.</p>
   </footer>
-    <!-- VLibras Plugin -->
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
 
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+  <!-- VLibras Plugin -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
 </body>
 </html>
