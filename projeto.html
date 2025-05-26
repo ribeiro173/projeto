@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Quem Somos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SomosCoop Inspirado</title>
   <style>
     * {
       margin: 0;
@@ -16,16 +17,70 @@
       color: #333;
     }
 
-    a { display: inline-block;
-       color: #208f58;
-        text-decoration: none; 
-      }
-    
-     footer {
+    header {
+      background: #208f58;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .banner h1 {
+      z-index: 1;
+      font-size: 2.5em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #00995d;
+      margin-bottom: 20px;
+    }
+
+    footer {
       background: #222;
       color: white;
       padding: 30px 20px;
       text-align: center;
+      font-size: 14px;
     }
 
     footer a {
@@ -38,35 +93,17 @@
       text-decoration: underline;
     }
 
-     header {
-      background: #208f58;
-      color: white;
-      padding: 10px 20px;
-    }
-
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     .logo {
   height: 40px;
   width: auto;
   object-fit: contain;
 }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
+
   <header>
-  <div class="container">
+    <div class="container">
       <a href="projeto.html">
       <img src="img/logo.png" alt="Logo da empresa" class="logo">
       <nav>
@@ -77,31 +114,50 @@
       </nav>
     </div>
   </header>
-  <h1>Quem Somos</h1>
-  <p>Somos um movimento que promove o cooperativismo no Brasil, mostrando como a cooperação transforma comunidades e impulsiona o desenvolvimento sustentável.</p>
-  <a href="projeto.html">← Voltar à Página Inicial</a>
-</body>
-  
+
+  <div class="banner">
+    <h1>Juntos, construímos um mundo mais cooperativo!</h1>
+  </div>
+
+  <section class="section" id="quemsomos">
+    <h2>Quem Somos</h2>
+    <p>Somos um movimento que promove o cooperativismo no Brasil, mostrando como a cooperação transforma comunidades e impulsiona o desenvolvimento sustentável.</p>
+  </section>
+
+  <section class="section" id="noticias">
+    <h2>Notícias</h2>
+    <ul>
+      <li><strong>18/05/2025:</strong> Nova campanha nacional valoriza o cooperativismo nas escolas.</li>
+      <li><strong>10/05/2025:</strong> Evento reúne cooperativas de todo o país em Brasília.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="valores">
+    <h2>Nossos Valores</h2>
+    <p>Valorizamos a cooperação, responsabilidade social, transparência, inclusão e desenvolvimento sustentável.</p>
+  </section>
+
   <footer id="contato">
     <p>Contato: contato@somoscoopbr.com.br | Tel: (61) 1234-5678</p>
     <p>
       <a href="https://www.facebook.com/login" target="_blank">Facebook</a> |
       <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a> |
       <a href="https://www.linkedin.com/login" target="_blank">LinkedIn</a>
-    <p>&copy; 2025 SeuNomeOuNomeDoSite. Todos os direitos reservados.</p>
     </p>
+    <p>&copy; 2025 SomosCoop Inspirado. Todos os direitos reservados.</p>
   </footer>
-    
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
 
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-  
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
 </html>
