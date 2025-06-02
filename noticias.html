@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Notícias</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    h1 { color: #208f58; }
+
+    a { display: inline-block; 
+      color: #208f58; 
+      text-decoration: none; }
+    
+     footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #00d8a0;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+     header {
+      background: #208f58;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="container">
+      <a href="projeto.html">
+      <img src="logo.png" alt="Logo da empresa" class="logo">
+      <nav>
+        <a href="quemSomos.html">Quem Somos</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="valores">Valores</a>
+        <a href="contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <h1>Notícias</h1>
+  <p>Texto</p>
+  <a href="projeto.html">← Voltar à Página Inicial</a>
+</body>
+  
+  <footer id="contato">
+    <p>Contato: contato@somoscoopbr.com.br | Tel: (61) 1234-5678</p>
+    <p>
+      <a href="https://www.facebook.com/login" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/login" target="_blank">LinkedIn</a>
+    <p>&copy; 2025 Arapongas - ESPM.</p>
+    </p>
+  </footer>
+    
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+  
+</html>
