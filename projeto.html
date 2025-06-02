@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arapongas - ESPM</title>
   <style>
     * {
@@ -13,7 +13,7 @@
     }
 
     body {
-      line-height: 1.6;
+      line-height:1.6 ;
       color: #333;
     }
 
@@ -78,6 +78,7 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
+      position: relative; /* necessário para posicionar a imagem dentro da seção */
     }
 
     .section h2 {
@@ -108,6 +109,34 @@
       width: auto;
       object-fit: contain;
     }
+      .imagem-fixa-direita {
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  width: 50%;
+  height: auto;
+}
+
+
+    .todas{
+      width: 100%;
+    }
+
+    .teste1{
+      width: 66%;
+      display: inline-block;
+    }
+
+    .teste2{
+      display: 	inline-block;
+      width: 33%;
+    }
+
+    @media (max-width: 600px) {
+      .imagem-fixa-direita {
+        width: 100px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -115,7 +144,7 @@
   <header>
     <div class="container">
       <a href="projeto.html">
-        <img src="img/logo.png" alt="Logo da empresa" class="logo">
+        <img src="img/logo.png" alt="Logo da empresa" class="logo" />
       </a>
       <nav>
         <a href="quemSomos.html">Quem Somos</a>
@@ -127,28 +156,45 @@
   </header>
 
   <div class="banner">
-    <img src=desmatamento25.jpg alt="Imagem de fundo">
+    <img src="desmatamento25.jpg" alt="Imagem de fundo" />
   </div>
 
   <section class="section" id="quemsomos">
     <h2>Quem Somos</h2>
-    <p>texto</p>
+    <p>Somos uma organização dedicada à promoção do cooperativismo e ao desenvolvimento sustentável de comunidades brasileiras.</p>
   </section>
 
   <section class="section" id="noticias">
+
     <h2>Notícias</h2>
-    <ul>
-      <li>texto</li>
-    </ul>
+    <div class="todas">
+      <div class="teste1">
+        <ul>
+          <li>18/05/2025: Nova campanha nacional valoriza o cooperativismo nas escolas.</li>
+          <p>
+            O coop promove o que chamamos de ciclo virtuoso de desenvolvimento, que começa com pessoas que se unem por um propósito e crescem juntas. Esse crescimento gera mais trabalho e renda na região e aquece a economia local. As pessoas começam a consumir mais, resultando em prosperidade para o negócio, para as pessoas e para a comunidade.
+            Tudo isso acontece por meio das cooperativas, organizações econômicas compostas por indivíduos que compartilham objetivos comuns e adotam uma gestão democrática. Seus associados são donos do negócio e os resultados, conhecidos como sobras, podem ser reinvestidos ou distribuídos entre eles. As coops são negócios competitivos e rentáveis e se destacam por colocarem as pessoas em primeiro lugar.
+          </p>
+        </ul>
+      </div>
+
+      <div class="teste2">
+        <!-- ✅ Imagem no canto inferior direito da área branca -->
+        <img src="img.jpg.png" alt="Imagem decorativa" class="imagem-fixa-direita" />
+
+      </div>
+    </div>
   </section>
 
   <section class="section" id="valores">
     <h2>Nossos Valores</h2>
-    <p>texto</p>
+    <p>Cooperação, responsabilidade social, inclusão, transparência e sustentabilidade.</p>
+
+    
   </section>
 
   <footer id="contato">
-    <p>Endereço:RUA PAVAO, 831, CENTRO, Arapongas-PR, 86700215, Brasil| Tel:  (43) 3274-4471</p>
+    <p>Endereço: RUA PAVÃO, 831, CENTRO, Arapongas-PR, 86700215, Brasil | Tel: (43) 3274-4471</p>
     <p>
       <a href="https://www.facebook.com/login" target="_blank">Facebook</a> |
       <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a> |
@@ -157,6 +203,7 @@
     <p>&copy; 2025 Arapongas - ESPM.</p>
   </footer>
 
+  <!-- VLibras -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
