@@ -11,6 +11,16 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(#d9f1ce, #a1cda3);
     }
+    header {
+      background: #208f58;
+      color: white;
+      padding: 10px 20px;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .page {
       display: none;
       padding: 20px;
@@ -74,6 +84,20 @@
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="container">
+      <a href="projeto.html">
+        <img src="img/logo.png" alt="Logo da empresa" class="logo" />
+      </a>
+      <nav>
+        <a href="quemSomos.html">Quem Somos</a>
+        <a href="pesquisa.html">Pesquisa</a>
+        <a href="figma.html">Figma</a>
+        <a href="contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
 <div id="pagina1" class="page">
   <div class="login-box">
